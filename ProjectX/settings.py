@@ -124,4 +124,4 @@ STATIC_URL = '/static/'
 
 
 # channels
-ASGI_APPLICATION = "ProjectX.routing.application"
+ASGI_APPLICATION = 'ProjectX.routing.application'
