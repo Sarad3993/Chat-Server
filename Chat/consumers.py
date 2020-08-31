@@ -2,9 +2,10 @@ import json
 # from asgiref.sync import async_to_sync
 from channels.generic.websocket import AsyncWebsocketConsumer
 
+
 # we now change the consumer to be asynchronous
 # async_to_sync is no longer needed when calling methods on the channel layer. so we commented it 
- 
+
 class ChatConsumer(AsyncWebsocketConsumer):
     async def connect(self):
         self.room_name = self.scope['url_route']['kwargs']['room_name']
